@@ -262,7 +262,7 @@ except KeyboardInterrupt:
     exit()
 
 except Exception as e:
-    with open("log.txt") as fileerror:
+    with open("log.txt", "w") as fileerror:
         fileerror.write(str(e))
     print("\n\n[-] Some problem, check nickname/log.txt")
     exit()
